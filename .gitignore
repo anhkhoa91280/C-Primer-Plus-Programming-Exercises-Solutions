@@ -1,2 +1,3 @@
-main
-makefile
+Chapter2/main
+Chapter2/makefile
+Chapter2/*.o
