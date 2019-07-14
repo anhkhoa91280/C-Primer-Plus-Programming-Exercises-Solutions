@@ -14,7 +14,7 @@ int main() {
     //describe blind mice and how they run
     print_mice();
     print_mice();
-    print_how_mice_run();
+    print_how_mice_run(); //describe how mice running in a field
 }
 void print_mice(){
     std::cout << "Three blind mice" << std::endl;
