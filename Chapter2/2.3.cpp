@@ -14,6 +14,7 @@ int main() {
     print_mice();
     print_mice();
     print_how_mice_run();
+    print_how_mice_run();
 }
 void print_mice(){
     std::cout << "Three blind mice" << std::endl;
