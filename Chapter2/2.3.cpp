@@ -12,6 +12,7 @@ void print_mice();
 void print_how_mice_run();
 int main() {
     print_mice();
+    print_mice();
     print_how_mice_run();
 }
 void print_mice(){
