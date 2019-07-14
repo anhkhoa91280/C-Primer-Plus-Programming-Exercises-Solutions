@@ -5,8 +5,8 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = prog*.o .*
 
-main: main prog6.o
-	$(CXX) $(FLAGS) $(OBJ) main prog6.o $(VERSION) 
+main: main prog7.o
+	$(CXX) $(FLAGS) $(OBJ) main prog7.o $(VERSION) 
 
 prog1.o: 2.1.cpp
 	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) prog1.o 2.1.cpp $(VERSION) 
@@ -25,6 +25,9 @@ prog5.o: 2.5.cpp
 
 prog6.o: 2.6.cpp
 	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) prog6.o 2.6.cpp $(VERSION) 
+
+prog7.o: 2.7.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) prog7.o 2.7.cpp $(VERSION) 
 clean:
 	rm $(RM_OBJS)
 
