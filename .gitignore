@@ -1,5 +1,5 @@
 main
-makefile
+Chapter*/makefile
 *.o
 .*.swp
 

@@ -3,7 +3,7 @@ FLAGS = -Wall -g
 VERSION = -std=c++1y
 COMPILE = -c
 OBJ = -o
-RM_OBJS = prog*.o .*
+RM_OBJS = prog*.o .* .*.swp
 
 #main: main prog_limits.o
 #	$(CXX) $(FLAGS) $(OBJ) main prog_limits.o $(VERSION) 
