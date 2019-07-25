@@ -1,7 +1,10 @@
-Chapter2/main
-Chapter2/makefile
+main
+makefile
 *.o
+.*.swp
 
-c++exercisesolution_rsa
-c++exercisesolution_rsa.pub
+.DS_Store
 
+C++PrimerPlusExerciseSolutions.xcodeproj/
+rsa_cpp_exersols
+rsa_cpp_exersols.pub
