@@ -5,17 +5,16 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = prog*.o .* .*.swp
 
+main: main prog_limits_2.o
+	$(CXX) $(FLAGS) $(OBJ) main prog_limits_2.o $(VERSION)
+prog_limits_2.o: limits_2.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) prog_limits_2.o limits_2.cpp $(VERSION)
+
 #main: main prog_limits.o
-#	$(CXX) $(FLAGS) $(OBJ) main prog_limits.o $(VERSION) 
+#	$(CXX) $(FLAGS) $(OBJ) main prog_limits.o $(VERSION)
 
 #prog_limits.o: limits.cpp
-#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) prog_limits.o limits.cpp $(VERSION) 
-
-main: main prog_limits_2.o
-    $(CXX) $(FLAGS) $(OBJ) main prog_limits_2.o $(VERSION)
-
-prog_limits_2.o: limits_2.cpp
-    $(CXX) $(FLAGS) $(COMPILE) $(OBJ) prog_limits_2.o limits_2.cpp $(VERSION)
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) prog_limits.o limits.cpp $(VERSION)
 
 #main: main prog_decimal_to_binary.o
 #	$(CXX) $(FLAGS) $(OBJ) main prog_decimal_to_binary.o $(VERSION)
