@@ -3,7 +3,7 @@ FLAGS = -Wall -g
 VERSION = -std=c++1y
 COMPILE = -c
 OBJ = -o
-RM_OBJS = prog*.o .* .*.swp
+RM_OBJS = *.o .* .*.swp
 
 main: main hexoct1.o
 	$(CXX) $(FLAGS) $(OBJ) main hexoct1.o $(VERSION)
