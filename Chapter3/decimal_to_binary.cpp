@@ -19,7 +19,7 @@ int main() {
 
 			d_num = d_num/2;
 		}
-		//1 always has remainder of 1
+		//1 divided by 2 gets and remainder of 1
 		i_vec.push_back(1);		
 
 		while(i_vec.size() % 4 != 0) 
