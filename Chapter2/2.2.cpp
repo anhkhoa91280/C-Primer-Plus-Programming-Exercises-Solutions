@@ -2,6 +2,7 @@
  * Author: Dang Nguyen Anh Khoa
  * Date: 20190713
  * Desc: Converts distance from furlongs to yards (1 furlong = 220 yards)
+ * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 

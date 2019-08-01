@@ -4,6 +4,7 @@
  * Desc: Program takes input as Celsius degree, and converts to Fahrenheit.
  *      The conversion should use a user-defined function.
  *      Fahrenheit = 1.8 x degrees Celsius + 32.0
+ * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 double convert_celsius_to_fahrenheit(double degrees_celsius);

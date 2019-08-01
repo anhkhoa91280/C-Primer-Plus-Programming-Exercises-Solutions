@@ -2,6 +2,7 @@
  * Author: Dang Nguyen Anh Khoa
  * Date: 20190714
  * Desc: Program converts light years into astronomical units. 1 light year = 63240 astronomical units.
+ * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 double light_years_to_astronomical(double light_years);

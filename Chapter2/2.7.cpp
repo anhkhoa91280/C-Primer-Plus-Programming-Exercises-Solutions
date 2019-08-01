@@ -3,6 +3,7 @@
  * Date: 20190714
  * Desc: Program asks user for time and minute and display as hh : mm. 
  *  The program should use a user-defined function that returns void.
+ * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 void print_hours_mins(int hours, int minutes);
