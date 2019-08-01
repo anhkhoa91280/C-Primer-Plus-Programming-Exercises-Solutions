@@ -2,6 +2,7 @@
  * Name: Dang Nguyen Anh Khoa
  * Date: 20190801
  * Desc: char type (integer type)
+ * Ref: C++ Primer Plus - 6th Edition
  * */
 
 #include <iostream>

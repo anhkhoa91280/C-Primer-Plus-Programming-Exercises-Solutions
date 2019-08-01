@@ -2,6 +2,7 @@
  * Author: Dang Nguyen Anh Khoa
  * Date: 20190714
  * Desc: Check system integer type limits. Types are short, int, long, long long
+ * Ref: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 #include <climits>

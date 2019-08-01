@@ -9,6 +9,7 @@
  *
  * Note: use std::oct and std::hex for displaying the number in octal and hexadecimal 
  * forms.
+ * Ref: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 

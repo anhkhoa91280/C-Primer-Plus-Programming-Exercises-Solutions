@@ -1,3 +1,9 @@
+/*
+ * Name: Dang Nguyen Anh Khoa
+ * Date: 20190801
+ * Desc: Convert decimal to binary
+ * */
+
 #include <iostream>
 #include <vector>
 

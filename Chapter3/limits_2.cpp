@@ -20,6 +20,8 @@ Desc: This program shows how integer types are treated in a C++ system.
 	0 expressed in binary as :  0000 0000 0000 0000
 	-1 expressed in binary as : 1111 1111 1111 1111
 	Adding these 2 numbers you get: 1111 1111 1111 1111 (which is 65535 in an unsiged variable)
+
+	Ref: C++ Primer Plus - 6th Edition
 */
 
 #include <iostream>

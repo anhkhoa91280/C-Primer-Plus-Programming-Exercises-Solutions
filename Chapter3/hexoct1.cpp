@@ -6,6 +6,8 @@
  * Any number starting with 0 and followed by digits in range 0-7 is octal
  * Any number starting with 0x or 0X is hexadecimal
  * By default, cout display integer literal in decimal
+ *
+ * Ref: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 
