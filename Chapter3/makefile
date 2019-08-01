@@ -5,10 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main hexoct2.o
-	$(CXX) $(FLAGS) $(OBJ) main hexoct2.o $(VERSION)
-hexoct1.o: hexoct2.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) hexoct2.o hexoct2.cpp $(VERSION)
+main: main chartype.o
+	$(CXX) $(FLAGS) $(OBJ) main chartype.o $(VERSION)
+chartype.o: chartype.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) chartype.o chartype.cpp $(VERSION)
+
+#main: main hexoct2.o
+#	$(CXX) $(FLAGS) $(OBJ) main hexoct2.o $(VERSION)
+#hexoct1.o: hexoct2.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) hexoct2.o hexoct2.cpp $(VERSION)
 
 #main: main hexoct1.o
 #	$(CXX) $(FLAGS) $(OBJ) main hexoct1.o $(VERSION)
