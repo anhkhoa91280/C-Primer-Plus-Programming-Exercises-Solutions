@@ -5,10 +5,20 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main chartype.o
-	$(CXX) $(FLAGS) $(OBJ) main chartype.o $(VERSION)
-chartype.o: chartype.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) chartype.o chartype.cpp $(VERSION)
+main: main escape_sequences.o
+	$(CXX) $(FLAGS) $(OBJ) main escape_sequences.o $(VERSION)
+chartype.o: escape_sequences.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) escape_sequences.o escape_sequences.cpp $(VERSION)
+
+#main: main literals.o
+#	$(CXX) $(FLAGS) $(OBJ) main literals.o $(VERSION)
+#chartype.o: literals.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) literals.o literals.cpp $(VERSION)
+
+#main: main chartype.o
+#	$(CXX) $(FLAGS) $(OBJ) main chartype.o $(VERSION)
+#chartype.o: chartype.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) chartype.o chartype.cpp $(VERSION)
 
 #main: main hexoct2.o
 #	$(CXX) $(FLAGS) $(OBJ) main hexoct2.o $(VERSION)
