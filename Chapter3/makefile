@@ -5,10 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main escape_sequences.o
-	$(CXX) $(FLAGS) $(OBJ) main escape_sequences.o $(VERSION)
-chartype.o: escape_sequences.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) escape_sequences.o escape_sequences.cpp $(VERSION)
+main: main universial_characters.o
+	$(CXX) $(FLAGS) $(OBJ) main universial_characters.o $(VERSION)
+chartype.o: universial_characters.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) universial_characters.o universial_characters.cpp $(VERSION)
+
+#main: main escape_sequences.o
+#	$(CXX) $(FLAGS) $(OBJ) main escape_sequences.o $(VERSION)
+#chartype.o: escape_sequences.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) escape_sequences.o escape_sequences.cpp $(VERSION)
 
 #main: main literals.o
 #	$(CXX) $(FLAGS) $(OBJ) main literals.o $(VERSION)
