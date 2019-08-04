@@ -5,10 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main universial_characters.o
-	$(CXX) $(FLAGS) $(OBJ) main universial_characters.o $(VERSION)
-chartype.o: universial_characters.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) universial_characters.o universial_characters.cpp $(VERSION)
+main: main floating_points.o
+	$(CXX) $(FLAGS) $(OBJ) main floating_points.o $(VERSION)
+chartype.o: floating_points.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) floating_points.o floating_points.cpp $(VERSION)
+
+#main: main universial_characters.o
+#	$(CXX) $(FLAGS) $(OBJ) main universial_characters.o $(VERSION)
+#chartype.o: universial_characters.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) universial_characters.o universial_characters.cpp $(VERSION)
 
 #main: main escape_sequences.o
 #	$(CXX) $(FLAGS) $(OBJ) main escape_sequences.o $(VERSION)
