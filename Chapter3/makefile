@@ -5,15 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main floating_point_disadvantages.o
-	$(CXX) $(FLAGS) $(OBJ) main floating_point_disadvantages.o $(VERSION)
-chartype.o: floating_point_disadvantages.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) floating_point_disadvantages.o floating_point_disadvantages.cpp $(VERSION)
+#main: main floating_point_disadvantages.o
+#	$(CXX) $(FLAGS) $(OBJ) main floating_point_disadvantages.o $(VERSION)
+#chartype.o: floating_point_disadvantages.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) floating_point_disadvantages.o floating_point_disadvantages.cpp $(VERSION)
 
-#main: main floating_point_constants.o
-#	$(CXX) $(FLAGS) $(OBJ) main floating_point_constants.o $(VERSION)
-#chartype.o: floating_point_constants.cpp
-#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) floating_point_constants.o floating_point_constants.cpp $(VERSION)
+main: main floating_point_constants.o
+	$(CXX) $(FLAGS) $(OBJ) main floating_point_constants.o $(VERSION)
+chartype.o: floating_point_constants.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) floating_point_constants.o floating_point_constants.cpp $(VERSION)
 
 #main: main floating_points.o
 #	$(CXX) $(FLAGS) $(OBJ) main floating_points.o $(VERSION)
