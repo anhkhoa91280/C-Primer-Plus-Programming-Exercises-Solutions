@@ -5,10 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main arithmetic_types_division.o
-	$(CXX) $(FLAGS) $(OBJ) main arithmetic_types_division.o $(VERSION)
-chartype.o: arithmetic_types_division.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) arithmetic_types_division.o arithmetic_types_division.cpp $(VERSION)
+main: main arithmetic_types_modulus.o
+	$(CXX) $(FLAGS) $(OBJ) main arithmetic_types_modulus.o $(VERSION)
+chartype.o: arithmetic_types_modulus.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) arithmetic_types_modulus.o arithmetic_types_modulus.cpp $(VERSION)
+
+#main: main arithmetic_types_division.o
+#	$(CXX) $(FLAGS) $(OBJ) main arithmetic_types_division.o $(VERSION)
+#chartype.o: arithmetic_types_division.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) arithmetic_types_division.o arithmetic_types_division.cpp $(VERSION)
 
 #main: main floating_point_disadvantages.o
 #	$(CXX) $(FLAGS) $(OBJ) main floating_point_disadvantages.o $(VERSION)
