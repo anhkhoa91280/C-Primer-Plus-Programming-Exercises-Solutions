@@ -5,10 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main type_cast.o
-	$(CXX) $(FLAGS) $(OBJ) main type_cast.o $(VERSION)
-chartype.o: type_cast.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) type_cast.o type_cast.cpp $(VERSION)
+main: main 3.1.o
+	$(CXX) $(FLAGS) $(OBJ) main 3.1.o $(VERSION)
+chartype.o: 3.1.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) 3.1.o 3.1.cpp $(VERSION)
+
+#main: main type_cast.o
+#	$(CXX) $(FLAGS) $(OBJ) main type_cast.o $(VERSION)
+#chartype.o: type_cast.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) type_cast.o type_cast.cpp $(VERSION)
 
 #main: main type_conversions_1.o
 #	$(CXX) $(FLAGS) $(OBJ) main type_conversions_1.o $(VERSION)
