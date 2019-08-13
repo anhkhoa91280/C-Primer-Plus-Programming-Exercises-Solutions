@@ -9,8 +9,8 @@
 
 int main() {
 	const int factor = 60;
-	float degrees, minutes;
-	int seconds;
+	int degrees, minutes, seconds;
+
 	std::cout << "Enter latitude in degress, minutes, and seconnds: " << std::endl;
 	std::cout << "Enter the degress: ";
 	std::cin >> degrees; 
