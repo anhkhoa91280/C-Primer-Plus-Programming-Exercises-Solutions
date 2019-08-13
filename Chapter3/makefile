@@ -5,10 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main 3.4.o
-	$(CXX) $(FLAGS) $(OBJ) main 3.4.o $(VERSION)
-chartype.o: 3.4.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) 3.4.o 3.4.cpp $(VERSION)
+main: main 3.5.o
+	$(CXX) $(FLAGS) $(OBJ) main 3.5.o $(VERSION)
+chartype.o: 3.5.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) 3.5.o 3.5.cpp $(VERSION)
+
+#main: main 3.4.o
+#	$(CXX) $(FLAGS) $(OBJ) main 3.4.o $(VERSION)
+#chartype.o: 3.4.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) 3.4.o 3.4.cpp $(VERSION)
 
 #main: main 3.3.o
 #	$(CXX) $(FLAGS) $(OBJ) main 3.3.o $(VERSION)
