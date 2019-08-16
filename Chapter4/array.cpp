@@ -2,6 +2,7 @@
  * Name: Dang Nguyen Anh Khoa
  * Date: 20190814
  * Desc: This program shows a C++ array is initialized, accessed, etc...
+ * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 
