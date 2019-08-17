@@ -5,20 +5,25 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main string_3_get.o
-	$(CXX) $(FLAGS) $(OBJ) main string_3_get.o $(VERSION)
-chartype.o: string_3_get.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_3_get.o string_3_get.cpp $(VERSION)
+main: main cstring_3_getline.o
+	$(CXX) $(FLAGS) $(OBJ) main cstring_3_getline.o $(VERSION)
+chartype.o: cstring_3_getline.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) cstring_3_getline.o cstring_3_getline.cpp $(VERSION)
 
-#main: main string_2.o
-#	$(CXX) $(FLAGS) $(OBJ) main string_2.o $(VERSION)
-#chartype.o: string_2.cpp
-#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_2.o string_2.cpp $(VERSION)
+#main: main cstring_3_get.o
+#	$(CXX) $(FLAGS) $(OBJ) main cstring_3_get.o $(VERSION)
+#chartype.o: cstring_3_get.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) cstring_3_get.o cstring_3_get.cpp $(VERSION)
 
-#main: main string.o
-#	$(CXX) $(FLAGS) $(OBJ) main string.o $(VERSION)
-#chartype.o: string.cpp
-#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string.o string.cpp $(VERSION)
+#main: main cstring_2.o
+#	$(CXX) $(FLAGS) $(OBJ) main cstring_2.o $(VERSION)
+#chartype.o: cstring_2.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) cstring_2.o cstring_2.cpp $(VERSION)
+
+#main: main cstring.o
+#	$(CXX) $(FLAGS) $(OBJ) main cstring.o $(VERSION)
+#chartype.o: cstring.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) cstring.o cstring.cpp $(VERSION)
 
 #main: main array.o
 #	$(CXX) $(FLAGS) $(OBJ) main array.o $(VERSION)
