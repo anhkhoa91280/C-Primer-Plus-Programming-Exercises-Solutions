@@ -5,10 +5,20 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main numeric_string_input.o
-	$(CXX) $(FLAGS) $(OBJ) main numeric_string_input.o $(VERSION)
-chartype.o: numeric_string_input.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) numeric_string_input.o numeric_string_input.cpp $(VERSION)
+main: main string_chars_operations.o
+	$(CXX) $(FLAGS) $(OBJ) main string_chars_operations.o $(VERSION)
+chartype.o: string_chars_operations.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_chars_operations.o string_chars_operations.cpp $(VERSION)
+
+#main: main string.o
+#	$(CXX) $(FLAGS) $(OBJ) main string.o $(VERSION)
+#chartype.o: string.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string.o string.cpp $(VERSION)
+
+#main: main numeric_string_input.o
+#	$(CXX) $(FLAGS) $(OBJ) main numeric_string_input.o $(VERSION)
+#chartype.o: numeric_string_input.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) numeric_string_input.o numeric_string_input.cpp $(VERSION)
 
 #main: main cstring_3_getline.o
 #	$(CXX) $(FLAGS) $(OBJ) main cstring_3_getline.o $(VERSION)
