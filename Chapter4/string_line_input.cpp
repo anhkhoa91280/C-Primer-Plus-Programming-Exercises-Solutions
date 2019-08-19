@@ -18,7 +18,7 @@ int main() {
 	std::cout << "Character array length before entering name: " 
 		<< std::strlen(c_name) << std::endl;
 	std::cout << "Enter a name: ";
-	std::cin.getline(c_name, 10);
+	std::cin.getline(c_name, SIZE);
 	std::cout << "Character name entered: " << c_name << std::endl;
 	std::cout << "Character name has length: " << std::strlen(c_name) << std::endl;
 	std::cout << std::endl;
