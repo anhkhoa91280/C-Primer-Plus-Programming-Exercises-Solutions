@@ -1,7 +1,7 @@
 main
 *.o
 .*.swp
-makefile
+Chapter*/makefile
 
 .DS_Store
 

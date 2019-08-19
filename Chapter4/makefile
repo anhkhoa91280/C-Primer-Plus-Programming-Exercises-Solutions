@@ -5,10 +5,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main string_chars_operations.o
-	$(CXX) $(FLAGS) $(OBJ) main string_chars_operations.o $(VERSION)
-chartype.o: string_chars_operations.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_chars_operations.o string_chars_operations.cpp $(VERSION)
+main: main string_line_input.o
+	$(CXX) $(FLAGS) $(OBJ) main string_line_input.o $(VERSION)
+chartype.o: string_line_input.cpp
+	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_line_input.o string_line_input.cpp $(VERSION)
+
+#main: main string_chars_operations.o
+#	$(CXX) $(FLAGS) $(OBJ) main string_chars_operations.o $(VERSION)
+#chartype.o: string_chars_operations.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_chars_operations.o string_chars_operations.cpp $(VERSION)
 
 #main: main string.o
 #	$(CXX) $(FLAGS) $(OBJ) main string.o $(VERSION)
