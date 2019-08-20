@@ -1,14 +1,20 @@
 CXX = clang++
 FLAGS = -Wall -g
-VERSION = -std=c++1y
+VERSION = -std=c++11
+LIB = -stdlib=libc++
 COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main string_line_input.o
-	$(CXX) $(FLAGS) $(OBJ) main string_line_input.o $(VERSION)
-chartype.o: string_line_input.cpp
-	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_line_input.o string_line_input.cpp $(VERSION)
+main: main string_raw.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main string_raw.o 
+string_raw.o: string_raw.cpp
+	$(CXX) $(FLAGS) $(COMPILE)  $(VERSION) $(LIB) $(OBJ) string_raw.o string_raw.cpp
+
+#main: main string_line_input.o
+#	$(CXX) $(FLAGS) $(OBJ) main string_line_input.o $(VERSION)
+#chartype.o: string_line_input.cpp
+#	$(CXX) $(FLAGS) $(COMPILE) $(OBJ) string_line_input.o string_line_input.cpp $(VERSION)
 
 #main: main string_chars_operations.o
 #	$(CXX) $(FLAGS) $(OBJ) main string_chars_operations.o $(VERSION)
