@@ -17,6 +17,8 @@ int main() {
     book cpp;
     book java;   
 	book python { "Python for AI", "56789poiuy", 25.8e3};
+	//assignment just like any other data type
+	book another_python = python;
 
 	cpp.name = R"+*(C++ Primer Plus)+*";
 	cpp.isbn = R"+*(80841867jkljf)+*";
@@ -42,8 +44,14 @@ int main() {
 	std::cout << "Price: " << python.price << std::endl;
 	std::cout << std::endl;
 
+	std::cout << "Another python book details: " << std::endl;
+	std::cout << "Name: " << another_python.name << std::endl;
+	std::cout << "ISBN: " << another_python.isbn << std::endl;
+	std::cout << "Price: " << another_python.price << std::endl;
+	std::cout << std::endl;
+
 	std::cout << "Total amount: " << static_cast<int>(cpp.price + 
-		java.price + python.price) << std::endl;
+		java.price + python.price + another_python.price) << std::endl;
 
     return 0;
 }
