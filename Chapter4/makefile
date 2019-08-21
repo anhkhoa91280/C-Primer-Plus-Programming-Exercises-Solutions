@@ -6,10 +6,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main string_raw.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main string_raw.o 
-string_raw.o: string_raw.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) string_raw.o string_raw.cpp
+main: main structure_book.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main structure_book.o 
+structure_book.o: structure_book.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) structure_book.o structure_book.cpp
+
+#main: main string_raw.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main string_raw.o 
+#string_raw.o: string_raw.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) string_raw.o string_raw.cpp
 
 #main: main string_line_input.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main string_line_input.o 
