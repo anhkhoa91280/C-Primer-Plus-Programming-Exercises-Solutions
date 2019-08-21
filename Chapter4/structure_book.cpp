@@ -5,6 +5,7 @@
  * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
+#include <string>
 
 struct book {
 	std::string name;
