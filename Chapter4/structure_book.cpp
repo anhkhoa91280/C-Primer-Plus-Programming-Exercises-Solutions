@@ -53,5 +53,12 @@ int main() {
 	std::cout << "Total amount: " << static_cast<int>(cpp.price + 
 		java.price + python.price + another_python.price) << std::endl;
 
+	//array of structures
+	book other_programming_books[] = {
+		{ "C# in 21 days", "123890poiqwe", 78.24e3 },
+		{ "Advanced java script", "asdf;lkhjh", 45.5e4 }
+	};
+	std::cout << other_programming_books[1].price << std::endl;
+
     return 0;
 }
