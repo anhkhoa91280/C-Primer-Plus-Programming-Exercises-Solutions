@@ -15,7 +15,8 @@ int main() {
 	std::cout.setf(std::ios_base::fixed, std::ios_base::floatfield);
     book cpp;
     book java;   
-	
+	book python { "Python for AI", "56789poiuy", 25.8e3};
+
 	cpp.name = R"+*(C++ Primer Plus)+*";
 	cpp.isbn = R"+*(80841867jkljf)+*";
 	cpp.price = 1.35e+6;
@@ -32,6 +33,16 @@ int main() {
 	std::cout << "Name: " << java.name << std::endl;
 	std::cout << "ISBN: " << java.isbn << std::endl;
 	std::cout << "Price: " << java.price << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "Python book details: " << std::endl;
+	std::cout << "Name: " << python.name << std::endl;
+	std::cout << "ISBN: " << python.isbn << std::endl;
+	std::cout << "Price: " << python.price << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "Total amount: " << static_cast<int>(cpp.price + 
+		java.price + python.price) << std::endl;
 
     return 0;
 }
