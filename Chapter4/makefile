@@ -6,10 +6,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main address.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main address.o 
-address.o: address.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) address.o address.cpp
+main: main pointer.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer.o 
+pointer.o: pointer.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer.o pointer.cpp
+
+#main: main address.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main address.o 
+#address.o: address.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) address.o address.cpp
 
 #main: main enumerations.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main enumerations.o 
