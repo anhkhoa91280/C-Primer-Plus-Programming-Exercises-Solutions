@@ -6,10 +6,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main unions.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main unions.o 
-unions.o: unions.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) unions.o unions.cpp
+main: main enumerations.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main enumerations.o 
+enumerations.o: enumerations.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) enumerations.o enumerations.cpp
+
+#main: main unions.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main unions.o 
+#unions.o: unions.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) unions.o unions.cpp
 
 #main: main structure_book.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main structure_book.o 
