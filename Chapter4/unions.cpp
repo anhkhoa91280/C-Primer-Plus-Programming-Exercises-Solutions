@@ -6,6 +6,7 @@
  * 	Union is used to save to data space where a variable requires to be 
  * 	represented in different data types but only 1 type at a time where Union's 
  * 	size is the same as the largest data member 
+ * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
 #include <string>
