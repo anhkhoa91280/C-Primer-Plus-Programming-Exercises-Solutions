@@ -3,11 +3,18 @@
  * Date: 20190822
  * Desc: This program shows union, data structure to instantiate 1 value at a
  * 	time to save place.
+ * 	Union is used to save to data space where a variable requires to be 
+ * 	represented in different data types but only 1 type at a time where Union's 
+ * 	size is the same as the largest data member 
  * */
 #include <iostream>
 #include <string>
 
 const int SIZE = 10;
+//The following union only takes 10 bytes (id_char's size), not 14 byptes
+//(sizeof(int) + sizeof(char)*10). Thus, save 4 bytes. 
+//Conceptually, the more data types it must represent, the more saves an
+//union would have 
 union book_id {
 	int id_num;
 	//union must know its size because
