@@ -6,10 +6,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main pointer.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer.o 
-pointer.o: pointer.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer.o pointer.cpp
+main: main pointer_new_operator.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_new_operator.o 
+pointer_new_operator.o: pointer_new_operator.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer_new_operator.o pointer_new_operator.cpp
+
+#main: main pointer.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer.o 
+#pointer.o: pointer.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer.o pointer.cpp
 
 #main: main address.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main address.o 
