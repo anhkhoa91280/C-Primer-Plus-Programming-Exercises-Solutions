@@ -1,7 +1,10 @@
 /*
  * Name: Dang Nguyen Anh Khoa
  * Date: 20190825
- * Desc: This program shows C++ pointer
+ * Desc: This program shows C++ pointer.
+ * 	They are just 2 sides of the same coin. 
+ * 	balance is the same as *p_balance
+ * 	&balance is the same as p_balance
  * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
