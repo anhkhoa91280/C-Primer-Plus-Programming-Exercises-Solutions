@@ -10,22 +10,26 @@ int main() {
 	//dn's pointing to an unnamed object (data object, differently to the object
 	//as a thing in the context of OOP)
 	int * dn = new int;
-	int * da, d;
+	double * da, d;
 
 	*dn = 1000;
 	std::cout << "dn's value: " << *dn << std::endl; 
 	std::cout << "location of the object that the pointer dn is pointing to: " 
 		<< dn << std::endl; 
 	std::cout << "location of the pointer dn itself: " << &dn << std::endl; 
+	std::cout << "size of the unnamed object: " << sizeof(*dn) << std::endl; 
+	std::cout << "size of the pointer dn: " << sizeof(dn) << std::endl;
 	std::cout << std::endl;
 	dn = NULL;
 
 	da = &d;
-	*da = 2000;
+	*da = 23.5;
 	std::cout << "da's value: " << *da << std::endl; 
 	std::cout << "location of the object that the pointer da is pointing to: " 
 		<< da << std::endl; 
 	std::cout << "location of the pointer da itself: " << &da << std::endl; 
+	std::cout << "size of the named object (variable): " << sizeof(*da) << std::endl; 
+	std::cout << "size of the pointer da: " << sizeof(da) << std::endl;
 	std::cout << std::endl;
 	da = NULL;
 
