@@ -21,6 +21,7 @@ int main() {
 	std::cout << "size of the pointer dn: " << sizeof(dn) << std::endl;
 	std::cout << std::endl;
 	dn = NULL;
+	delete dn;
 
 	da = &d;
 	*da = 23.5;
@@ -32,6 +33,7 @@ int main() {
 	std::cout << "size of the pointer da: " << sizeof(da) << std::endl;
 	std::cout << std::endl;
 	da = NULL;
+	delete da;
 
 	return 0;
 }
