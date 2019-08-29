@@ -20,5 +20,10 @@ int main() {
 	arr--;
 	std::cout << "arr[0] is now: " << arr[0] << std::endl; 
 
+	//free up memory
+	delete [] arr;
+	//set dangling pointer to NULL
+	arr = NULL;
+
 	return 0;
 }
