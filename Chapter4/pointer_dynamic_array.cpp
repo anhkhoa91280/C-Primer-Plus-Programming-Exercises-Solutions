@@ -2,6 +2,8 @@
  * Nqme: Dang Nguyen Anh Khoa
  * Date: 20190829
  * Desc: This program shows how to dynamically initialize an array using pointer
+ * 	Unlike array, you can increment or decrement a pointer to traverse back and
+ * 	forthe the array
  * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
