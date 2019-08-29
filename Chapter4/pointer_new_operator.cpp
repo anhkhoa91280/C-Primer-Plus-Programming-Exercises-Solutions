@@ -20,7 +20,6 @@ int main() {
 	std::cout << "size of the unnamed object: " << sizeof(*dn) << std::endl; 
 	std::cout << "size of the pointer dn: " << sizeof(dn) << std::endl;
 	std::cout << std::endl;
-	dn = NULL;
 	delete dn;
 
 	da = &d;
@@ -32,8 +31,9 @@ int main() {
 	std::cout << "size of the named object (variable): " << sizeof(*da) << std::endl; 
 	std::cout << "size of the pointer da: " << sizeof(da) << std::endl;
 	std::cout << std::endl;
-	da = NULL;
-	delete da;
+	//the following piece of code won't work because it will free memory space
+	//for the variable that da's pointing to which d, and that's illegal
+	//delete da;
 
 	return 0;
 }
