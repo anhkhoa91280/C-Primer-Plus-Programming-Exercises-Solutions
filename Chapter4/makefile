@@ -6,10 +6,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main pointer_dynamic_array.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_dynamic_array.o 
-pointer_dynamic_array.o: pointer_dynamic_array.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer_dynamic_array.o pointer_dynamic_array.cpp
+main: main pointer_array_arithmetic.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_array_arithmetic.o 
+pointer_array_arithmetic.o: pointer_array_arithmetic.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer_array_arithmetic.o pointer_array_arithmetic.cpp
+
+#main: main pointer_dynamic_array.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_dynamic_array.o 
+#pointer_dynamic_array.o: pointer_dynamic_array.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer_dynamic_array.o pointer_dynamic_array.cpp
 
 #main: main pointer_new_operator.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_new_operator.o 
