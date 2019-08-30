@@ -22,6 +22,8 @@ int main() {
 	
 	//use pointer arithmetic
 	std::cout << "Address of ps: " << ps << std::endl; 
+	//you can change the value of a pointer like the following
+	//but not array, that's the only difference between array and pointer
 	std::cout << "2nd student: " << *(++ps) << std::endl;
 	std::cout << "Address of ps now: " << ps << std::endl; 
 	std::cout << "1st student: " << *(--ps) << std::endl;
