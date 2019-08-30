@@ -15,7 +15,9 @@ int main() {
 	std::cout << "1st student: " << *students << std::endl;
 	std::cout << "Address of student: " << students << std::endl; 
 	std::cout << "2nd student: " << *(students + 1) << std::endl;
-	std::cout << "Address of student: " << students << std::endl; 
+	std::cout << "Address of student: " << students << std::endl;
+  	//Internally whenever you use array[i], C++ converts to *(array+i)	
+	std::cout << "Last student: " << students[3] << std::endl;
 	std::cout << std::endl;
 	
 	//use pointer arithmetic
