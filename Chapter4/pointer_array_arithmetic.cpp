@@ -23,12 +23,15 @@ int main() {
 	//use pointer arithmetic
 	std::cout << "Address of ps: " << ps << std::endl; 
 	//you can change the value of a pointer like the following
-	//but not array, that's the only difference between array and pointer
+	//but not array, that's a difference between array and pointer
 	std::cout << "2nd student: " << *(++ps) << std::endl;
 	std::cout << "Address of ps now: " << ps << std::endl; 
 	std::cout << "1st student: " << *(--ps) << std::endl;
 	std::cout << "Address of ps now: " << ps << std::endl; 
 
+	//another difference b/w pointer and array:
+	//sizeof() for an array yields the size of the array
+	//sizeof() for a pointer yields the size of the pointer
 	std::cout << "\nSize of students array: " << sizeof(students) << std::endl;
 	std::cout << "Size of pointer to students array: " << sizeof(ps) << std::endl;
 
