@@ -25,5 +25,8 @@ int main() {
 	std::cout << R"+*("Welcome" )+*" << a->name << ", you've just turned " <<
 		a->age << std::endl;	
 
+	delete a;
+	a = NULL;
+
 	return 0;
 }
