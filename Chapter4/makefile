@@ -6,15 +6,20 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
+main: main 4.3.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.3.o 
+4.3.o: 4.3.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) 4.3.o 4.3.cpp
+
 #main: main 4.2.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.2.o 
 #4.2.o: 4.2.cpp
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) 4.2.o 4.2.cpp
 
-main: main 4.1.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.1.o 
-4.1.o: 4.1.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) 4.1.o 4.1.cpp
+#main: main 4.1.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.1.o 
+#4.1.o: 4.1.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) 4.1.o 4.1.cpp
 
 #main: main storage_automatic_static_dynamic.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main storage_automatic_static_dynamic.o 
