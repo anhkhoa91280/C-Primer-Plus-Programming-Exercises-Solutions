@@ -8,7 +8,7 @@
 #include <iostream>
 
 int main() {
-	std::string first_name, last_name, full_name;
+	std::string first_name, last_name;
 	char grade;
 	int age;
 
