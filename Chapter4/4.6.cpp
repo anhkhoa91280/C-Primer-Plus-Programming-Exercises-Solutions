@@ -12,25 +12,28 @@ struct Candy_bar {
 	int calories;
 };
 int main() {
-	Candy_bar * snack = new Candy_bar[3];
+	Candy_bar ** snack;
 
-	snack[0] = { "Potato Chips", 0.5, 200 };
-	*(snack+1) = { "Fish Cake", 0.3, 300};
-	*(snack+2) = { "Corn", 0.6, 450};
+	snack[0] = new Candy_bar;
+	*snack[0] = { "Potato Chips", 0.5, 200 };
+	snack[1] = new Candy_bar;
+	*snack[1] = { "Fish Cake", 0.3, 300};
+	snack[2] = new Candy_bar;
+	*snack[2] = { "Corn", 0.6, 450};
 
-	std::cout << "Brand name: " << snack[0].brand << std::endl;
-	std::cout << "Weight: " << snack[0].weight << std::endl;
-	std::cout << "Calories: " << snack[0].calories << std::endl;
+	std::cout << "Brand name: " << snack[0]->brand << std::endl;
+	std::cout << "Weight: " << snack[0]->weight << std::endl;
+	std::cout << "Calories: " << snack[0]->calories << std::endl;
 	std::cout << std::endl;
 
-	std::cout << "Brand name: " << snack[1].brand << std::endl;
-	std::cout << "Weight: " << snack[1].weight << std::endl;
-	std::cout << "Calories: " << snack[1].calories << std::endl;
+	std::cout << "Brand name: " << snack[1]->brand << std::endl;
+	std::cout << "Weight: " << snack[1]->weight << std::endl;
+	std::cout << "Calories: " << snack[1]->calories << std::endl;
 	std::cout << std::endl;
 
-	std::cout << "Brand name: " << snack[2].brand << std::endl;
-	std::cout << "Weight: " << snack[2].weight << std::endl;
-	std::cout << "Calories: " << snack[2].calories << std::endl;
+	std::cout << "Brand name: " << snack[2]->brand << std::endl;
+	std::cout << "Weight: " << snack[2]->weight << std::endl;
+	std::cout << "Calories: " << snack[2]->calories << std::endl;
 	std::cout << std::endl;
 
 	return 0;
