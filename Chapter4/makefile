@@ -6,10 +6,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main pointer_structure.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_structure.o 
-pointer_structure.o: pointer_structure.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer_structure.o pointer_structure.cpp
+main: main storage_automatic_static_dynamic.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main storage_automatic_static_dynamic.o 
+storage_automatic_static_dynamic.o: storage_automatic_static_dynamic.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) storage_automatic_static_dynamic.o storage_automatic_static_dynamic.cpp
+
+#main: main pointer_structure.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_structure.o 
+#pointer_structure.o: pointer_structure.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) pointer_structure.o pointer_structure.cpp
 
 #main: main pointer_array_arithmetic.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main pointer_array_arithmetic.o 
