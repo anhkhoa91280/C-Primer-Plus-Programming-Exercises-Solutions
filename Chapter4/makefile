@@ -6,10 +6,15 @@ COMPILE = -c
 OBJ = -o
 RM_OBJS = *.o .* .*.swp
 
-main: main 4.6.o
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.6.o 
-4.6.o: 4.6.cpp
-	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) 4.6.o 4.6.cpp
+main: main 4.7.o
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.7.o 
+4.7.o: 4.7.cpp
+	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) 4.7.o 4.7.cpp
+
+#main: main 4.6.o
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.6.o 
+#4.6.o: 4.6.cpp
+#	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(COMPILE) $(OBJ) 4.6.o 4.6.cpp
 
 #main: main 4.5.o
 #	$(CXX) $(FLAGS) $(VERSION) $(LIB) $(OBJ) main 4.5.o 
