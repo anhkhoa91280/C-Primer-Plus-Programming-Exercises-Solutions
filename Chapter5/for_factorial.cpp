@@ -18,7 +18,7 @@ int main() {
 	//factorials of 0, and 1 are always 1
 	factorials[0] = factorials[1] = 1LL;
 
-	for ( int i = 1; i <= n; i++ ) { 
+	for ( int i = 2; i <= n; i++ ) { 
 		factorials[i] = factorials[i-1]*i;
 	}
 
