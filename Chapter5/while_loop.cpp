@@ -15,7 +15,7 @@ int main() {
 
 	std::cout << "Hello " << name << ", here's your name vertically and "
 		<< "ASCIIized" << std::endl;	
-	while ( name[++i] != '\0') 
+	while ( name[++i] ) 
 		std::cout << name[i] << ": " << static_cast<int>(name[i]) << std::endl;
 
 	return 0;
