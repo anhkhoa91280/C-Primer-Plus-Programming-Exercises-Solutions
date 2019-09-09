@@ -23,12 +23,16 @@ int main () {
 		{ 41, 35, 30 }
 	};
 	
-	std::cout << "Highest temparatures of Hanoi, Saigon, Danang from 2014-2019: "
+	std::cout << "Highest temparatures of Hanoi, Saigon, Danang from 2015-2019: "
 		<< std::endl;
+	std::cout << "Cities" << "\t";
+	for ( int year : { 2015, 2016, 2017, 2018, 2019 } ) 
+		std::cout << year << "\t";
+	std::cout << std::endl;
 	for ( int city = 0; city < n_cities; ++city ) {
-		std::cout << cities[city] << ": " << "\t";
+		std::cout << cities[city] << "\t";
 		for ( int year = 0; year < n_years; ++year )
-			std::cout << temps[year][city] << ", ";
+			std::cout << temps[year][city] << "\t";
 		std::cout << std::endl;
 	}
 
