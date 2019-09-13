@@ -15,9 +15,9 @@ int main () {
 	do {
 		std::cin >> guess;
 		if ( guess < FAV ) 
-			std::cout << "Your guess is too low, try again! ";
+			std::cout << "Your guess is too low, try again: ";
 		else if (guess > FAV)
-			std::cout << "Your guess is too high, try again! ";
+			std::cout << "Your guess is too high, try again: ";
 		else
 			std::cout << "Congratulations! You guessed it right" << std::endl;
 			
