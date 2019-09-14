@@ -30,8 +30,10 @@ int main () {
 	}
 
 	std::cout << "Here is your collection: " << std::endl;
-	for ( Car * car : cars )
+	for ( Car * car : cars ) {
 		std::cout << car->year << ": " << car->make << std::endl;
+		delete car;
+	}
 
 	return 0;
 }
