@@ -16,7 +16,8 @@ int main () {
 		std::cout << "Out of range of an integer. Try again: ";
 		std::cin >> n;
 	}
-	std::cout << "You've entered an integer with the value: " << n << std::endl;
+	int val = static_cast<int>(n);
+	std::cout << "You've entered an integer with the value: " << val << std::endl;
 
 	return 0;
 }
