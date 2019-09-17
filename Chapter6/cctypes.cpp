@@ -11,6 +11,7 @@ you see the the new scene with an enraged Collossipede!"@
  * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
+#include <cctype>
 
 int main() {
 	char c;
@@ -21,7 +22,7 @@ int main() {
 	int others = 0;
 
 	std::cout << "Enter some characters, terminate by @ " << std::endl;
-	(std::cin.get(c)).get();
+	std::cin.get(c);
 
 	while ( c != '@' ) {
 		if ( isdigit(c) )
