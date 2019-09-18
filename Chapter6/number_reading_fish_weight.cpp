@@ -24,11 +24,13 @@ int main() {
 	for ( auto w : weights )
 		total += w;
 	
-	std::cout << "You've caught " << total << " kg of fish." << std::endl;
-
-	if ( cnt > 0 )
+	if ( cnt > 0 ) {
+		std::cout << "You've caught " << total << " kg of fish." << std::endl;
 		std::cout << "The average weight of " << cnt << " fish is: " 
 			<< total/cnt << " kg." << std::endl;
+	}
+	else 
+		std::cout << "No fish caught." << std::endl;
 
 	return 0;
 }
