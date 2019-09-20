@@ -25,6 +25,7 @@ int main() {
 	if ( !in_file.is_open() ) {
 		std::cout << "Failed reading file." << std::endl;
 		std::cout << "Program terminating." << std::endl;
+		exit(EXIT_FAILURE);
 	}
 	in_file >> score; //get the first score
 	while ( in_file.good() ) {
