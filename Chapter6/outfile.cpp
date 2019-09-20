@@ -39,8 +39,8 @@ int main() {
 	file << "Year: " << year << std::endl;
 	file.precision(2);
 	file.setf(std::ios_base::fixed, std::ios_base::floatfield);
-	file << "Price was offered: " << a_price << std::endl;
-	file << "Price now offered: " << b_price << std::endl;
+	file << "Was offered: " << a_price << std::endl;
+	file << "Now offered: " << b_price << std::endl;
 
 	file.close(); //close file stream when done using it
 
