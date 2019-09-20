@@ -35,7 +35,7 @@ int main() {
 		in_file.get();
 	}
 	
-	//Ensure reading successfully
+	//Determine why the reading loop above was terminated
 	if ( in_file.eof() ) 
 		std::cout << "Program's read the whole file." << std::endl;
 	else if ( in_file.fail() )
