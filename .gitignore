@@ -2,6 +2,7 @@ main
 *.o
 .*.swp
 Chapter*/makefile
+Chapter6/Cars.txt
 
 .DS_Store
 
