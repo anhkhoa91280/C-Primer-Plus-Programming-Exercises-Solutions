@@ -3,6 +3,7 @@ main
 .*.swp
 Chapter*/makefile
 Chapter6/Cars.txt
+Chapter6/scores.txt
 
 .DS_Store
 
