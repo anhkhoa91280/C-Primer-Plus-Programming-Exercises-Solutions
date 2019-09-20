@@ -42,5 +42,7 @@ int main() {
 	file << "Price was offered: " << a_price << std::endl;
 	file << "Price now offered: " << b_price << std::endl;
 
+	file.close(); //close file stream when done using it
+
 	return 0;
 }
