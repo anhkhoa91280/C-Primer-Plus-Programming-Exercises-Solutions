@@ -40,6 +40,12 @@ int main() {
 		infile >> cons[i]->amount;
 		infile.get();
 	}
+	if ( infile.eof() )
+		std::cout << "Contributor file read successfully." << std::endl;
+	else if ( infile.fail() )
+		std::cout << "Terminated by type miss match." << std::endl;
+	else
+		std::cout << "Terminated with unknown reason." << std::endl;
 
 	//Grand Patrons
 	cnt = 0;
