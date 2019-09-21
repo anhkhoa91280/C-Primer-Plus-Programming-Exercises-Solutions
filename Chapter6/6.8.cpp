@@ -36,5 +36,7 @@ int main() {
 	else
 		std::cout << "Terminated with unknown reason." << std::endl;
 
+	infile.close();
+
 	return 0;
 }
