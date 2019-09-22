@@ -11,8 +11,8 @@ void menu();
 int main() {
 	char c;
 	menu();
-	while ( std::cin >> c 
-			&& ( c!='c' || c!='p' || c!='t' || c!='g' || c!='q') ) {
+
+	while ( std::cin >> c ) {
 		if ( 'q'==c) {
 			std::cout << "Quitting program..." << std::endl;
 			break;
