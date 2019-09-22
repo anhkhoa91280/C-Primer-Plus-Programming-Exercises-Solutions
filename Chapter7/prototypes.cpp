@@ -1,7 +1,12 @@
 /*
  * Name: Dang Nguyen Anh Khoa
  * Date: 20190922
- * Desc: This program shows function prototypes in C++
+ * Desc: This program shows function prototypes in C++. Protype is used for 
+ * 	compiler to know the function arguments and return type so that it knows
+ * 	how many bytes to expect and how to interpret them. It's efficient to use
+ * 	prototypes instead of scanning through the file looking for function definition
+ * 	or even worse if function definition is in another file which can be compiled
+ * 	and linked later.
  * Reference: C++ Primer Plus - 6th Edition 
  * */
 #include <iostream>
