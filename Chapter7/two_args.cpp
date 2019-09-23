@@ -15,7 +15,6 @@ int main() {
 	std::cout << "Enter q to quit the program." << std::endl;
 	std::cout << "Enter a character: ";
 	std::cin >> c;
-	//std::cin.get();
 
 	while ( c!='q' && c!='Q' ) {
 		std::cout << "Enter a number: ";
