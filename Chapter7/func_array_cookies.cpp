@@ -19,6 +19,9 @@ int main() {
 		<< std::endl;
 	return 0;
 }
+
+//int arr[] is similar to int * arr when and only when used in function header
+//and function prototypes
 int total(int arr[], int size) {
 	int total = 0;
 	for ( int i=0; i<size; ++i )
