@@ -7,7 +7,7 @@
  * */
 #include <iostream>
 
-int total(int arr[], int size);
+int total(int * arr, int size);
 const int MAX = 8;
 int main() {
 	int cookies[] = { 1,3,4,8,6,5,9,12 };
