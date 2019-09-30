@@ -56,7 +56,8 @@ void swap(int * a, int * b) {
 void bubble_sort(int * arr, int size, bool (*compare)(int, int)) {
 	for (int i=0; i<size; ++i )
 		for(int j=0; j<size-i-1; ++j)
-			if ( compare(arr[j], arr[j+1]) )
+			//if ( compare(arr[j], arr[j+1]) )   //this works as well
+			if ( (*compare)(arr[j], arr[j+1]) )
 				swap(&arr[j], &arr[j+1]);
 }
 void print_arr(const int * arr, int n) {
