@@ -15,7 +15,8 @@ int main() {
 
 	//single pointer to function
 	const double * (*a)(const double *, int) = &f1;
-	auto b = a;
+	auto b = a; //use of 'auto' is quick but it can be error prone. for example
+				//b = &a or b = *a, these lead you to bugs that can be hard to track
 	//the C++11 way which is shorter but can be confusing to novice programmers
 	std::cout << "Address: " << b(arr, SIZE) << " Value: " 
 		<< *b(arr, SIZE) << std::endl;
