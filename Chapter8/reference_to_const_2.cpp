@@ -20,12 +20,14 @@ double cube(const double & x);
 int main() {
 	double side = 3.0;
 	double * p = &side;
+	double & r = side;
 	double arr[3] = {1.0, 2.0, 3.0};
 	Square square = { 4.0 };
 	long t = 5L;
 
 	std::cout << cube(side) << std::endl; //x is side
 	std::cout << cube(*p) << std::endl; //x is side
+	std::cout << cube(r) << std::endl; //x is side
 	std::cout << cube(arr[1]) << std::endl; //x is arr[1]
 	std::cout << cube(square.side) << std::endl; //x is square.side
 	std::cout << cube(t) << std::endl; //x is temporary variable
