@@ -38,6 +38,5 @@ double cuber(double & x) {
 double cuberc(double const & x) {
 	//the below line of code wont work because x is of type "double const &" 
 	//x *= x*x;
-	double n = x*x;
-	return n;
+	return x*x*x;
 }
