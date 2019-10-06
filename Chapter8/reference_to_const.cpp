@@ -23,6 +23,9 @@ int main() {
 	//efficient)
 	std::cout << cuber(x) << " is the cube of " << x << std::endl;
 	std::cout << cuberc(x) << " is the cube of " << x << std::endl;
+	//the below line of code will not compile because cuber parameter must be 
+	//bound to an actual varialbe, not an expression
+	//cuber(x+3);
 }
 double cubev(double x) {
 	x *= x*x;
