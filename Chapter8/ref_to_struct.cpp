@@ -35,15 +35,19 @@ int main() {
 	accumulate(accumulate(team_scourge, zeus), lc);
 	display(team_scourge);
 
+	//duplicate is assigned a structure directly from the reference returned by 
+	//accumulate(). If accumulated was to return a value, then the returned value
+	//would be copied to a temporary location, then from that location the value
+	//will be copied to duplicate (less efficient).
 	duplicate = accumulate(team_scourge, cen);
 	std::cout << "Duplicate team: " << std::endl;
 	display(duplicate);
 	std::cout << "Scourge team: " << std::endl;
 	display(team_scourge);
 
-	//Ill-advised assignment
 	calc_accuracy(lc);
-	duplicate = lc;
+	//Ill-advised assignment
+	accumulate(duplicate, lc) = lc;  
 	std::cout << "Duplicate team after ill-advised assignment:" << std::endl;
 	display(duplicate);
 
