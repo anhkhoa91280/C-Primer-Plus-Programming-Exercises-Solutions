@@ -35,6 +35,11 @@ int main() {
 	//if we don't protect ref returned fromm accumulate() then we can fall into 
 	//the below ill-advised assignment
 	//accumulate(team_scourge, zeus) = zeus;
+
+	//accumulate() returns a ref so dup gets assigned a value directly from a variable
+	//if accumualate() returns a value, that value has to be stored in a temporary
+	//variable then gets assign to dup, which is a less efficient than the returning
+	//a ref approach. Thus, try to return a ref if possible
 	dup = accumulate(team_scourge, zeus);
 	display(team_scourge);
 	std::cout << "Duplicate team: " << std::endl;
@@ -45,6 +50,7 @@ int main() {
 void calc_accuracy(Damage_Dealt & dd) {
 	dd.accuracy = 100.00f * dd.ontarget / dd.hits;
 }
+//ref must be returned from a ref which does NOT cease to exist after the function call
 const Damage_Dealt & accumulate(Damage_Dealt & target, const Damage_Dealt & source) {
 	target.hits += source.hits;
 	target.ontarget += source.ontarget;
