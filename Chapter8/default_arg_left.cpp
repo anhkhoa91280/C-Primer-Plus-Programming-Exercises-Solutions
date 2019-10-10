@@ -28,7 +28,7 @@ int main() {
 }
 char * left(const char * c, int n) {
 	int i;
-	char * sub = new char[n];
+	char * sub = new char[n+1];
 
 	if ( n<0 ) n = 0;
 
