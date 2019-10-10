@@ -26,16 +26,18 @@ int main() {
 
 	return 0;
 }
-char * left(const char * c, int n) {
+char * left(const char * s, int n) {
 	int i;
+	int m = 0;
 
 	if ( n<0 ) n = 0;
-	int len = std::strlen(c);
-	n = (n < len) ? n : len; 
-	char * sub = new char[n+1];
 
-	for ( i=0; i<n && c[i]; ++i )
-		sub[i] = c[i];
+	while ( m<n && s[m] != '\0' )
+		m++;
+	char * sub = new char[m+1];
+
+	for ( i=0; i<m && s[i]; ++i )
+		sub[i] = s[i];
 		
 	sub[i] = '\0';
 
