@@ -1,7 +1,8 @@
 /*
  * Name: Dang Nguyen Anh Khoa
  * Date: 20191010
- * Desc: This program shows the use of default argument in function.
+ * Desc: This program shows the use of function overloading for functions with the
+ * 	same business purpose but require different algorithms to implement.
  * Reference: C++ Primer Plus - 6th Edition
  * */
 #include <iostream>
