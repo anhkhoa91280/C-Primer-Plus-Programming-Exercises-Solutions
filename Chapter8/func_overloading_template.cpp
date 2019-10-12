@@ -40,7 +40,6 @@ int main() {
 	std::cout << "After swapping array: " << std::endl;
 	display(c,d, MAX);
 
-
 	return 0;
 }
 template<typename T>
