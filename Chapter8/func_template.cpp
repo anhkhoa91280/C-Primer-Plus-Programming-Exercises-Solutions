@@ -1,9 +1,8 @@
 /*
  * Name: Dang Nguyen Anh Khoa
  * Date: 20191011
- * Desc: This program shows function template in C++. During runtime a function
- * 	definition will be generated accordingly to the argument list of the calling 
- * 	function.
+ * Desc: This program shows function template in C++. A function definition will 
+ * 	be generated accordingly to the argument list of the calling function.
  * Reference: C++ Primer Plus - 6th Edition.
  * */
 #include <iostream>
