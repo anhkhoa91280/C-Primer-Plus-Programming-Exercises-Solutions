@@ -5,7 +5,7 @@
  * 	a normal template.
  * 	Rules:
  * 	+A specialization overrides a regular template.
- * 	+A non template function overrides both.
+ * 	+An ordinary function overrides both.
  * The example shows that with any data type, the compiler just generates a regular 
  * function that simply swaps 2 data objects. But with a special situation where
  * there are 2 Account objects need to be swapped, the compiler will generate a 
