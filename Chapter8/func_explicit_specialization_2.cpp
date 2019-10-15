@@ -5,15 +5,20 @@
  * 	which are function templates. (2) is an explicit specialization which provides
  * 	no name so it can never be a candidate for overload resolution.
  *
- * 	After selecting 2 candidates (1) & (3), the compiler regnisize that (3) is more
- * specialized for the client call, so the compiler synthesize a function 
- * declaration from (3) with the substitution of the argument from the client call 
- * for the function declaration parameter. 
+ * 	Synthesize: After selecting 2 candidates (1) & (3), the compiler regnisize that 
+ * 	(3) is more specialized for the client call, so the compiler synthesize a 
+ * 	function declaration from (3) with the substitution of the argument from the 
+ * 	client call for the function declaration parameter. 
  *
- *  The compiler then replicates the function template definition, and also
- * substitutes the argument from the client call for the replicated function 
- * definition. At this point, this definition will be sitting in the object file, 
- * ready to be called when the program runs. 
+ *  Instantiation: The compiler then replicates the function template definition, 
+ *  and also substitutes the argument from the client call for the replicated 
+ *  function definition. At this point, this definition will be sitting in the 
+ *  object file,ready to be called when the program runs. 
+ *	
+ * 	Note: A specialization is a function (whether the compiler produces it
+ * 	implicitly or explicitly), however it does NOT introduce a new name (it borrows
+ * 	the name previously introduced by its template). Therefore a specializations 
+ * 	don't take part in overload resolution.
  *
  * Reference:  https://www.youtube.com/watch?v=NIDEjY5ywqU
  * */
