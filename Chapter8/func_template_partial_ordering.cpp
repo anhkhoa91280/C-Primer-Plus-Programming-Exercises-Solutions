@@ -20,6 +20,10 @@
  * 	the name previously introduced by its template). Therefore a specializations 
  * 	don't take part in overload resolution.
  *
+ * 	Partial ordering: At the point the compiler sees (2), it had previously seen
+ * 	(1) only. Therefore, the only possible candidate that (2) can be a
+ * 	specialization of is (1).
+ *
  * Reference:  https://www.youtube.com/watch?v=NIDEjY5ywqU
  * */
 #include <iostream>
