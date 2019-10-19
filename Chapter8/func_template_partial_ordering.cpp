@@ -16,9 +16,9 @@
  *
  * 	Why???
  *	-for (1): T is type int * so the template declaration would be 
- *	template<class int *> void h(int *);
+ *	void h<int *>(int *);
  *	-for (3): T is type int so the template declaration would be 
- *	template<class int> void h(int *);
+ *	void h<class int>(int *);
  *	As you can see, for (3), less conversion is needed so the compiler would pick
  *	(3)
  *
