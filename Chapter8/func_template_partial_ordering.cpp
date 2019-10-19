@@ -10,6 +10,14 @@
  * 	function declaration from (3) with the substitution of the argument from the 
  * 	client call for the function declaration parameter. 
  *
+ * 	Why???
+ *	-for (1): T is type int * so the template declaration would be 
+ *	template<class int *> void h(int *);
+ *	-for (3): T is type int so the template declaration would be 
+ *	template<class int> void h(int *);
+ *	As you can see, for (3), less conversion is needed so the compiler would pick
+ *	(3)
+ *
  *  Instantiation: The compiler then replicates the function template definition, 
  *  and also substitutes the argument from the client call for the replicated 
  *  function definition. At this point, this definition will be sitting in the 
