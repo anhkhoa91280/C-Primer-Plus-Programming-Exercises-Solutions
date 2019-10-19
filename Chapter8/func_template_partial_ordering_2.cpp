@@ -13,6 +13,10 @@
  * From Template B:
  * void show_debts<double>(const double * arr[], int n); so T is double
  * Thefore, no type conversion from Template B so the compiler would pick Template B
+ * 
+ * If Template B is removed from the program then 2nd also calls Function 
+ * instantiated from Template A and print Addresses of variables rather than their 
+ * values.
  *
  * Reference: C++ Primer Plus - 6th Edition.
  * */
