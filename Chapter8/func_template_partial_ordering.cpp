@@ -1,7 +1,11 @@
 /*
  * Name: Dang Nguyen Anh Khoa
  * Date: 20191014
- * Desc: After overload resolution, 2 declarations were candidates (1) and (3) 
+ * Desc:
+ * 	Partial Ordering: The rules for finding the most specialized templates are
+ * 	called the Partial Ordering rules for function templates.
+ *
+ *  After overload resolution, 2 declarations were candidates (1) and (3) 
  * 	which are function templates. (2) is an explicit specialization which provides
  * 	no name so it can never be a candidate for overload resolution.
  *
@@ -28,7 +32,7 @@
  * 	the name previously introduced by its template). Therefore a specializations 
  * 	don't take part in overload resolution.
  *
- * 	Partial ordering: At the point the compiler sees (2), it had previously seen
+ *   At the point the compiler sees (2), it had previously seen
  * 	(1) only. Therefore, the only possible candidate that (2) can be a
  * 	specialization of is (1).
  *
