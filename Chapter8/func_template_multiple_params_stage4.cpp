@@ -1,7 +1,8 @@
 /*
  * Name: Dang Nguyen Anh Khoa
  * Date: 20191020
- * Desc: This program shows template with multiple params.
+ * Desc: This program shows template with multiple params in Stage 4 where var is
+ * of the same type as expression.
  * Reference: C++ Primer Plus - 6th Edition
  *
  * Note: The return type of circumferrence() is not known at the point of
@@ -24,7 +25,7 @@ int main() {
 }
 template<class T1, class T2> 
 auto circumferrence(T1 x, T2 y) -> decltype(x+y) {
-	typedef decltype(x+y) xpy;
+	typedef decltype(x+y) xpy; //xpy is of the same type as expression x+y
 	xpy c = 2*(x+y);
 	return c;
 }
