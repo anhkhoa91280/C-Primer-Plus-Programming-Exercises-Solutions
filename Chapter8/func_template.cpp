@@ -14,7 +14,6 @@ void display(const T x, const T y);
 int main() {
 	int a, b;
 	double c, d;
-
 	std::cout << "Enter 2 integers: ";
 	std::cin >> a >> b;
 	std::cout << "Before swapping integers: " << std::endl;

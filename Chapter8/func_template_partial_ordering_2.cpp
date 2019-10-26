@@ -41,7 +41,7 @@ int main() {
 		{ "Federer", 5000 }
 	};
 	show_debts(debts, MAX);
-	std::cout << std::endl;
+    std::cout << std::endl;
 
 	const double * bank_debts[MAX];
 	for ( int i=0; i<MAX; ++i )
