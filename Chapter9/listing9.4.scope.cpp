@@ -21,9 +21,11 @@ int main() {
 void g(int & param_x, int & param_y) {
 	int x = -10;
 	int y = -20;
+	int z = -30;
 
 	std::cout << "In g(), x: " << x << ", &x: " << &x << std::endl; 
 	std::cout << "In g(), y: " << y << ", &y: " << &y << std::endl; 
+	std::cout << "In g(), z: " << z << ", &z: " << &z << std::endl; 
 
 	std::cout << "In g(), param_x: " << param_x << ", &param_x: " 
 		<< &param_x << std::endl; 
@@ -35,7 +37,9 @@ void g(int & param_x, int & param_y) {
 
 		std::cout << "In block, x: " << x << ", &x: " << &x << std::endl; 
 		std::cout << "In block, y: " << y << ", &y: " << &y << std::endl; 
+		std::cout << "In block, z: " << z << ", &z: " << &z << std::endl; 
 	}
 	std::cout << "After block, x: " << x << ", &x: " << &x << std::endl; 
 	std::cout << "After block, y: " << y << ", &y: " << &y << std::endl; 
+	std::cout << "After block, z: " << z << ", &z: " << &z << std::endl; 
 }
