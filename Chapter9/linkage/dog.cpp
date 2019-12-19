@@ -10,5 +10,5 @@ void bark() {
 }
 
 void eat_bone() {
-	std::cout << "Dog is eating " << bone << " and" << butter << std::endl; 
+	std::cout << "Dog is eating " << bone << " and " << butter << std::endl; 
 }
