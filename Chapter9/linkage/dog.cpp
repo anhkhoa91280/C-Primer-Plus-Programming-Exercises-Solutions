@@ -2,9 +2,6 @@
 #include <iostream>
 #include <string>
 
-std::string butter = "Butter"; //static duration, external linkage
-static std::string bone = "Bone"; //static duration, internal linkage
-
 void bark() { 
 	char name[] = "Baade"; //automatic variable: cease to exist when the function 
 							//invocation ends.
