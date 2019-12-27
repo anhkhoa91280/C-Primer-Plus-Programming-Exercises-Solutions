@@ -2,7 +2,7 @@ CXX = clang++
 VERSION = -std=c++1y
 LIB = -stdlib=libc++
 FLAGS = -Wall -g
-RM_OBJS = *.o *.swp .swap.*
+RM_OBJS = *.o .* .*.swp
 FILE = external_internal_linkage
 
 default: main
@@ -15,7 +15,8 @@ Cat.o: Cat.cpp Cat.h
 $(FILE).o: $(FILE).cpp
 	$(CXX) $(VERSION) $(LIB) $(FLAGS) -c $(FILE).cpp
 
-clean: rm $(RM_OBJS)
+clean: 
+	rm $(RM_OBJS)
 
 
 

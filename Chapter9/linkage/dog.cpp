@@ -2,6 +2,9 @@
 #include <iostream>
 #include <string>
 
+std::string butter = "butter"; //static duration, external linkage : available in the
+								//Cat Translation Unit and external_internal 
+								//Translation Unit as well.
 void bark() { 
 	char name[] = "Baade"; //automatic variable: cease to exist when the function 
 							//invocation ends.

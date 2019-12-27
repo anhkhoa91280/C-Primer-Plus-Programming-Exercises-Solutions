@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 
-extern std::string butter;
 static std::string fish = "Fish";
 
 void meow() { 
