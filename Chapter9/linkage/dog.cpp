@@ -1,3 +1,7 @@
+/**
+ * Name: Dang Nguyen Anh Khoa
+ * Reference: C++ Primer Plus - 6th Edition.
+ * */
 #include "dog.h"
 #include <iostream>
 #include <string>
